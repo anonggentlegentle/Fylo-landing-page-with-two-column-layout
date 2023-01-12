@@ -1,0 +1,42 @@
+:root {
+  --color-primary-blue-1: hsl(243, 87%, 12%);
+  --color-primary-blue-2: hsl(238, 22%, 44%);
+  --color-accent-blue: hsl(224, 93%, 58%);
+  --color-accent-cyan: hsl(170, 45%, 43%);
+  --color-neutral-gray-1: hsl(240, 75%, 98%);
+  --color-neutral-gray-2: hsl(0, 0%, 75%);
+  --font-family-1: "Open Sans", sans-serif;
+  --font-family-2: "Raleway", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  color-scheme: dark light;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-1);
+  font-size: 1.6rem;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
