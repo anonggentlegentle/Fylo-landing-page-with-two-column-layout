@@ -41,3 +41,44 @@ video {
   display: block;
   width: 100%;
 }
+
+.main {
+  width: min(118rem, 95%);
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__hero {
+    width: 100%;
+  }
+
+  &__header {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 15rem;
+  }
+
+  &__hero-menu {
+    display: flex;
+    list-style: none;
+    column-gap: 4rem;
+  }
+
+  &__hero-link {
+    &:link,
+    &:visited {
+      color: var(--color-primary-blue-1);
+      text-decoration: none;
+      font-family: var(--font-family-2);
+    }
+  }
+}
