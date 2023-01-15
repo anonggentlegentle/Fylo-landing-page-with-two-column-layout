@@ -43,7 +43,6 @@ video {
 }
 
 .main {
-  width: min(118rem, 95%);
   margin: 0 auto;
 
   display: flex;
@@ -51,7 +50,7 @@ video {
   align-items: center;
 
   &__hero {
-    width: 100%;
+    width: min(118rem, 95%);
   }
 
   &__header {
@@ -108,7 +107,7 @@ video {
   }
 
   &__hero-textbox {
-    width: 55%;
+    width: 45%;
     padding: 1.25rem;
 
     &::placeholder {
@@ -118,6 +117,35 @@ video {
 
   &__hero-label {
     width: 35%;
+  }
+
+  &__content {
+    width: 100%;
+    background-image: url(../images/bg-curve-desktop.svg),
+      linear-gradient(#f8f8fe, #f8f8fe);
+    background-position: 0% 0%, 0% 11.4rem;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+  }
+
+  &__content-proper {
+    width: min(118rem, 95%);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content-left {
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  &__content-right {
+    width: 45%;
   }
 }
 
