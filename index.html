@@ -52,16 +52,24 @@
               Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
             </p>
-            <div class="main__input-box">
-              <input
-                type="text"
-                class="main__hero-textbox"
-                id="hero-input"
-                placeholder="Enter your email..."
-              /><label for="hero-input" class="main__hero-label">
-                <button class="btn btn--input">Get Started</button>
+            <form class="main__hero-form">
+              <fieldset class="main__input-box">
+                <input
+                  type="email"
+                  class="main__hero-textbox"
+                  id="hero-input"
+                  placeholder="Enter your email..."
+                />
+                <input
+                  type="submit"
+                  value="Get Started"
+                  class="btn btn--input"
+                />
+              </fieldset>
+              <label for="hero-input" class="main__hero-label">
+                Please check your email
               </label>
-            </div>
+            </form>
           </div>
 
           <div class="main__hero-right">
@@ -90,7 +98,15 @@
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required!
             </p>
-            <a href="#" class="btn btn--link"> See how Fylo works</a>
+            <a href="#" class="btn btn--link">
+              <span class="btn-text">See how Fylo works</span>
+              <div class="main__content-link-icon">
+                <img
+                  src="images/icon-arrow.svg"
+                  alt="arrow icon"
+                  class="main__content-link-img"
+                /></div
+            ></a>
             <blockquote class="main__content-quote">
               Fylo has improved our team productivity by an order of magnitude.
               Since making the switch our team has become a well-oiled
