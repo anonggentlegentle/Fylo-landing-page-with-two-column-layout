@@ -450,7 +450,9 @@ video {
     row-gap: 2rem;
     column-gap: 15rem;
 
-    grid-template-columns: repeat(1, 1fr);
+    @media only screen and (max-width: $bp-1) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .footer__item {
