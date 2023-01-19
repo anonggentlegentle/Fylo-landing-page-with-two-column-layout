@@ -401,7 +401,11 @@ video {
   grid-template-columns: repeat(2, 1fr);
   row-gap: 2rem;
   column-gap: 15rem;
-  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (max-width: 50em) {
+  .footer__menu {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .footer .footer__item--3 {
   grid-row: 2;
